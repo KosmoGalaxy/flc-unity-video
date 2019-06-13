@@ -10,6 +10,8 @@ const src = `Assets/${dirName}`;
 const dst = `${buildDir}/${dirName}`;
 const licenseSrc = 'LICENSE';
 const licenseDst = `${dst}/GoogleVR/LICENSE`;
+const versionSrc = 'VERSION.md';
+const versionDst = `${dst}/VERSION.md`;
 
 
 if (!nodeFs.existsSync(buildDir))
@@ -23,3 +25,6 @@ console.log(`"${src}" copied to "${dst}".`);
 
 nodeFs.copyFileSync(licenseSrc, licenseDst);
 console.log(`"${licenseSrc}" copied to "${licenseDst}".`);
+
+nodeFs.copyFileSync(versionSrc, versionDst);
+console.log(`"${versionSrc}" copied to "${versionDst}".`);
