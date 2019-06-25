@@ -17,6 +17,7 @@
       <Path>.idea</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
+      <Path>Temp</Path>
       <Path>build</Path>
       <Path>native_libs</Path>
       <Path>obj</Path>
